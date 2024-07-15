@@ -17,17 +17,17 @@
         android:theme="@style/Theme.DTS_Latihan"
         tools:targetApi="31">
         <activity
-            android:name=".ui.setting.SettingActivity"
-            android:parentActivityName=".ui.MainActivity"
-            android:exported="false" />
+            android:name=".ui.listview.ListViewActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.MainActivity"/>
         <activity
-            android:name=".ui.contact.ContactActivity"
-            android:parentActivityName=".ui.MainActivity"
-            android:exported="false" />
+            android:name=".ui.kalkulator.KalkulatorActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.MainActivity" />
         <activity
-            android:name=".ui.profile.ProfileActivity"
-            android:parentActivityName=".ui.MainActivity"
-            android:exported="false" />
+            android:name=".ui.input_nama.InputNamaActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.MainActivity"/>
         <activity
             android:name=".ui.MainActivity"
             android:exported="true">

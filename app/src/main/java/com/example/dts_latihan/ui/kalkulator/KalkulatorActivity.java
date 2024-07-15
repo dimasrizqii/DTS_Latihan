@@ -1,4 +1,4 @@
-package com.example.dts_latihan.ui.setting;
+package com.example.dts_latihan.ui.kalkulator;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,22 +7,21 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.dts_latihan.R;
-import com.example.dts_latihan.databinding.ActivitySettingBinding;
+import com.example.dts_latihan.databinding.ActivityKalkulatorBinding;
 import com.example.dts_latihan.ui.MainActivity;
-import com.example.dts_latihan.ui.contact.ContactActivity;
 
 import java.util.Objects;
 
-public class SettingActivity extends AppCompatActivity {
+public class KalkulatorActivity extends AppCompatActivity {
 
-    private ActivitySettingBinding binding;
+    ActivityKalkulatorBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_setting);
+        setContentView(R.layout.activity_kalkulator);
 
-        binding = ActivitySettingBinding.inflate(getLayoutInflater());
+        binding = ActivityKalkulatorBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
 
@@ -32,7 +31,7 @@ public class SettingActivity extends AppCompatActivity {
     }
 
     public void goBack(View view) {
-        Intent intent = new Intent(SettingActivity.this, MainActivity.class);
+        Intent intent = new Intent(KalkulatorActivity.this, MainActivity.class);
         startActivity(intent);
     }
 }

@@ -14,9 +14,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.dts_latihan.R;
 import com.example.dts_latihan.databinding.ActivityMainBinding;
-import com.example.dts_latihan.ui.contact.ContactActivity;
-import com.example.dts_latihan.ui.profile.ProfileActivity;
-import com.example.dts_latihan.ui.setting.SettingActivity;
+import com.example.dts_latihan.ui.input_nama.InputNamaActivity;
+import com.example.dts_latihan.ui.kalkulator.KalkulatorActivity;
+import com.example.dts_latihan.ui.listview.ListViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -74,19 +74,19 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.profile) {
-            Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+        if (id == R.id.input_nama) {
+            Intent intent = new Intent(MainActivity.this, InputNamaActivity.class);
             startActivity(intent);
 
             return true;
 
-        } else if (id == R.id.setting) {
-            Intent intent = new Intent(MainActivity.this, SettingActivity.class);
+        } else if (id == R.id.kalkulator) {
+            Intent intent = new Intent(MainActivity.this, KalkulatorActivity.class);
             startActivity(intent);
 
             return true;
         } else {
-            Intent intent = new Intent(MainActivity.this, ContactActivity.class);
+            Intent intent = new Intent(MainActivity.this, ListViewActivity.class);
             startActivity(intent);
 
             return true;
